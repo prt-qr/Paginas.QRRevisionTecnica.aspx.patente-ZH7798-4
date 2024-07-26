@@ -1,0 +1,184 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta http-equiv="origin-trial" content="Az520Inasey3TAyqLyojQa8MnmCALSEU29yQFW8dePZ7xQTvSt73pHazLFTK5f7SyLUJSo2uKLesEtEa9aUYcgMAAACPeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZS5jb206NDQzIiwiZmVhdHVyZSI6IkRpc2FibGVUaGlyZFBhcnR5U3RvcmFnZVBhcnRpdGlvbmluZyIsImV4cGlyeSI6MTcyNTQwNzk5OSwiaXNTdWJkb21haW4iOnRydWUsImlzVGhpcmRQYXJ0eSI6dHJ1ZX0=">
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+	<title>Info CRT - MTT</title> 
+	<link rel="stylesheet" href="file:///C:/Users/lucasgarci/Downloads/filesssss_files/jquery.mobile-1.0rc2.min.css"> 
+   
+	
+  	
+  	<script type="text/javascript" async="" src="file:///C:/Users/lucasgarci/Downloads/filesssss_files/recaptcha__es.js.descarga" crossorigin="anonymous" integrity="sha384-beUYBzBb91EHsjNcE5aSc4Xou1DJWcD4NHtScX69LGm0Uyggetbml7O3Gu/4rZYa"></script><script src="file:///C:/Users/lucasgarci/Downloads/filesssss_files/jquery-1.6.4.min.js.descarga"></script>  
+      
+    <script src="file:///C:/Users/lucasgarci/Downloads/filesssss_files/prts.min.js.descarga" type="text/javascript"></script>
+             <script src="file:///C:/Users/lucasgarci/Downloads/filesssss_files/jquery.mobile-1.0rc2.min.js.descarga"></script>
+      
+    
+     
+       
+          
+     
+
+    
+    <script src="file:///C:/Users/lucasgarci/Downloads/filesssss_files/api.js.descarga" async="" defer=""></script> 
+   
+ <style>
+    /* already defined in bootstrap4 */
+    .text-xs-center {
+        text-align: center;
+    }
+
+    .g-recaptcha {
+        display: inline-block;
+    }
+</style>
+<script type="text/javascript">
+    var your_site_key = '6LctMP8SAAAAANBvpGMjkMm5bBJ7TY-7X9UuGAaq';
+    var renderRecaptcha = function () {
+        grecaptcha.render('ReCaptchContainer', {
+            'sitekey': your_site_key,
+            'callback': reCaptchaCallback,
+            theme: 'light', //light or dark    
+            type: 'image',// image or audio    
+            size: 'normal'//normal or compact    
+        });
+    };
+
+    var reCaptchaCallback = function (response) {
+        if (response !== '') {
+            jQuery('#lblMessage').css('color', 'green').html('Correcto');
+        }
+    };
+
+    jQuery('button[type="button"]').click(function (e) {
+        var message = 'Por favor marque la casilla';
+        if (typeof (grecaptcha) != 'undefined') {
+            var response = grecaptcha.getResponse();
+            (response.length === 0) ? (message = 'Fallo en la Verificacion Captcha') : (message = 'Correcto!');
+        }
+        jQuery('#lblMessage').html(message);
+        jQuery('#lblMessage').css('color', (message.toLowerCase() == 'Correcto!') ? "green" : "red");
+    });
+
+</script>  
+<style type="text/css">
+table.altrowstable {
+	font-family: verdana,arial,sans-serif;
+	font-size:11px;
+	color:#333333;
+	border-width: 1px;
+	border-color: #a9c6c9;
+	border-collapse: collapse;
+
+}
+table.altrowstable th {
+	border-width: 1px;
+	padding: 8px;
+	border-style: solid;
+	border-color: #a9c6c9;
+}
+table.altrowstable td {
+	border-width: 1px;
+	padding: 8px;
+	border-style: solid;
+	border-color: #a9c6c9;
+}
+.oddrowcolor{
+	background-color:#d4e3e5;
+}
+.evenrowcolor{
+	background-color:#c3dde0;
+}
+#certificadoRT{
+	/*display:none;*/
+}
+#waiter{
+	padding:4em;
+	text-align:center;
+}
+</style>
+
+
+</head> 
+<body>
+    <form method="post" action="" id="mForm">
+<div class="text-xs-center">
+        <div id="ReCaptchContainer" class="g-recaptcha"><div style="width: 304px; height: 78px;"><div><iframe title="reCAPTCHA" width="304" height="78" role="presentation" name="a-ln22d1sl8sdb" frameborder="0" scrolling="no" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox allow-storage-access-by-user-activation" src="https://www.google.com/recaptcha/api2/anchor?ar=1&amp;k=6LctMP8SAAAAANBvpGMjkMm5bBJ7TY-7X9UuGAaq&amp;co=aHR0cHM6Ly93d3cucHJ0LmNsOjQ0Mw..&amp;hl=es-419&amp;type=image&amp;v=rKbTvxTxwcw5VqzrtN-ICwWt&amp;theme=light&amp;size=normal&amp;cb=3x79krrg6cq5"></iframe></div><textarea id="g-recaptcha-response" name="g-recaptcha-response" class="g-recaptcha-response" style="width: 250px; height: 40px; border: 1px solid rgb(193, 193, 193); margin: 10px 25px; padding: 0px; resize: none; display: none;"></textarea></div><iframe style="display: none;"></iframe></div>  
+         
+        </div>
+
+
+   
+
+<input type="submit" name="ctl00$MainContent$btn_verificar" value="Enviar" id="MainContent_btn_verificar">
+<div data-role="page">    
+		
+    <input type="hidden" name="ctl00$MainContent$hddPPU" id="MainContent_hddPPU" value="fst075">
+   
+   <div class="text-xs-center">
+          
+         
+        </div>
+     <div class="text-xs-center"> <label id="lblMessage"></label> <br>    </div>
+   
+     
+   
+
+   
+<div data-role="header" data-theme="b">
+		<h1>Datos <br> Revision Tecnica</h1>
+        	</div><!-- /header -->
+	<div id="result">
+	    <div data-role="content">
+       
+        <div data-role="fieldcontain">
+		
+       
+        	
+             <span id="MainContent_lbltablaCertificadoRT">   <table id="certificadoRT" class="altrowstable">  <tbody><tr>     <td>    <label><strong>PLACA PATENTE</strong>: TS8247
+
+
+</label>    </td>   </tr>  <tr>     <td>    <label><strong>Marca</strong>: MAZDA
+
+
+</label>    </td>   </tr>   <tr>     <td>     <label><strong>Tipo</strong>: CAMIONETA (CAP. DE CARGA MENOR A 1.750 KGS.) [B] (A2)
+
+</label>    </td>   </tr>   <tr>      <td>     <label><strong>Modelo</strong>:  B 2500 D CAB SDX
+
+
+</label>      </td>     </tr>     <tr>      <td>      <label><strong>Año Fab.</strong>: 2000
+
+</label>      </td>   </tr>     <tr>      <td>      <label><strong>Tipo Sello</strong>: Catalítico
+ </label>      </td>   </tr>   <tr>          <td>           <label><strong>REVISION TECNICA</strong></label>         </td>     </tr>   <tr>          <td>           <label><strong>Region</strong>:  XIII Region Metropolitana </label>         </td>     </tr>     <tr>        <td>      <label><strong>N° Cert</strong>: N°AB339000000123467 </label>        </td>    </tr>     <tr>        <td>       <label><strong>Fecha</strong>: 22-07-2024</label>       </td>   </tr>    <tr>      <td>        <label><strong>Estado</strong>: Aprobada</label>      </td>    </tr>     <tr>      <td>         <label><strong>Fecha Venc.</strong>: 31-07-2025</label>       </td>   </tr>      <tr>       <td>         <label><strong>Nombre PRT</strong>: TÜV RHEINLAND ANDINO S.A. </label>       </td>    </tr>     <tr>       <td>         <label><strong>Dirección PRT</strong>: EINSTEIN 1010-1026 </label>       </td>    </tr>      <tr>          <td>           <label><strong>REVISION GASES</strong></label>         </td>     </tr>   <tr>          <td>           <label><strong>Region</strong>:  XIII Region Metropolitana</label>         </td>     </tr>     <tr>        <td>      <label><strong>N° Cert</strong>:  N°AB339000000123467</label>        </td>    </tr>     <tr>        <td>       <label><strong>Fecha</strong>: 22-07-2024</label>       </td>   </tr>    <tr>      <td>        <label><strong>Estado</strong>: Aprobada</label>      </td>    </tr>     <tr>      <td>         <label><strong>Fecha Venc.</strong>: 31-07-2025</label>       </td>   </tr>      <tr>       <td>         <label><strong>Nombre PRT</strong>: TÜV RHEINLAND ANDINO S.A.</label>       </td>    </tr>     <tr>       <td>         <label><strong>Dirección PRT</strong>: EINSTEIN 1010-1026</label>       </td>    </tr>      </tbody></table> </span>
+
+                   
+       
+           
+
+            <div class="ui-body ui-body-b">
+		
+		</div> 
+        
+         </div> 
+  </div>
+      </div>
+        <div data-role="footer" data-theme="b">
+		<h4>Ministerio de Transporte <br> y Telecomunicaciones</h4>
+	</div><!-- /footer -->	
+				
+
+
+		</div><!-- /page -->
+    </form>
+
+
+<div style="background-color: rgb(255, 255, 255); border: 1px solid rgb(204, 204, 204); box-shadow: rgba(0, 0, 0, 0.2) 2px 2px 3px; position: absolute; transition: visibility 0s linear 0.3s, opacity 0.3s linear 0s; opacity: 0; visibility: hidden; z-index: 2000000000; left: 0px; top: -10000px;"><div style="width: 100%; height: 100%; position: fixed; top: 0px; left: 0px; z-index: 2000000000; background-color: rgb(255, 255, 255); opacity: 0.05;"></div><div class="g-recaptcha-bubble-arrow" style="border: 11px solid transparent; width: 0px; height: 0px; position: absolute; pointer-events: none; margin-top: -11px; z-index: 2000000000;"></div><div class="g-recaptcha-bubble-arrow" style="border: 10px solid transparent; width: 0px; height: 0px; position: absolute; pointer-events: none; margin-top: -10px; z-index: 2000000000;"></div><div style="z-index: 2000000000; position: relative;"><iframe title="El reCAPTCHA caduca dentro de dos minutos" name="c-65asdgm2drnm" frameborder="0" scrolling="no" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox" src="./Info CRT - MTTddd_files/bframe.html" style="width: 100%; height: 100%;"></iframe></div></div>
+
+
+
+
+
+
+
+
+
+
+</body></html>
